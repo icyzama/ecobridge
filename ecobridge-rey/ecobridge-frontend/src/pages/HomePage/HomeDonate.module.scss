@@ -1,0 +1,43 @@
+:root {
+  --PrimaryColorEmeraldGreen: hsl(145, 63%, 49%);
+  --PrimaryColorTealBlue: hsl(180, 100%, 25%);
+  --SecondaryColorSunflowerYellow: hsl(45, 100%, 51%);
+  --SecondaryColorSoftOrange: hsl(29, 100%, 63%);
+  --AccentColorCoralRed: hsl(0, 100%, 71%);
+  --AccentColorWarmPink: hsl(343, 100%, 65%);
+  --AccentColorNavyBlue: hsl(240, 28%, 14%);
+}
+
+.homeSection {
+  margin-top: 10rem;
+
+  .sectionContainer {
+    margin: auto;
+    height: 36vw;
+    padding: 0 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 3rem;
+
+    .imageDiv {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+
+      .imageStyle {
+        border: 8px solid var(--SecondaryColorSunflowerYellow);
+        width: 380px;
+        height: 30em;
+      }
+
+      .sampleDonateImage {
+        position: relative;
+        right: 5px;
+        border: 8px solid var(--SecondaryColorSunflowerYellow);
+      }
+    }
+
+    .headerText {
+      width: auto;
+    }
+  }
+}

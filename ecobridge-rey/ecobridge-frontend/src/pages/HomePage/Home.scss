@@ -1,0 +1,64 @@
+:root {
+  --PrimaryColorEmeraldGreen: hsl(145, 63%, 49%);
+  --PrimaryColorTealBlue: hsl(180, 100%, 25%);
+  --SecondaryColorSunflowerYellow: hsl(45, 100%, 51%);
+  --SecondaryColorSoftOrange: hsl(29, 100%, 63%);
+  --AccentColorCoralRed: hsl(0, 100%, 71%);
+  --AccentColorWarmPink: hsl(343, 100%, 65%);
+  --AccentColorNavyBlue: hsl(240, 28%, 14%);
+  --HoverSunflowerYellow: hsl(45, 97%, 60%);
+  --HoverNavyBlue: hsl(240, 21%, 17%);
+}
+
+.main-font {
+  font-family: "Raleway";
+  font-size: 4rem;
+  width: 10em;
+  margin: auto;
+  background: conic-gradient(from 90deg, #ffc107 0%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6vw;
+  font-weight: 600;
+}
+
+.subheader-text {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.btn {
+  margin: 2rem auto;
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  justify-content: space-between;
+
+  .text {
+    flex-grow: 1;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .icon {
+    align-items: flex-end;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--SecondaryColorSunflowerYellow);
+  }
+
+  &:hover {
+    background-color: var(--HoverNavyBlue);
+  }
+}
+
+.sample-image {
+  border: 8px solid #ffc107;
+  width: 100%;
+}

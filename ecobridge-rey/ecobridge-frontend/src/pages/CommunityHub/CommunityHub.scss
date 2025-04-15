@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.container {
+  padding-top: 80px; // Adjust based on navbar height
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.community-hub {
+  display: flex;
+  padding: 2rem;
+  gap: 1.5rem;
+  background-color: #f5f7fa;
+  font-family: 'Raleway', sans-serif;
+
+  aside,
+  main {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);;
+  }
+
+  .user-profile {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+
+    .user-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  /* Center horizontally */
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 158px;
+      height: 158px;
+      border-radius: 1000%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .user-name {
+      font-size: 1.5rem;
+      font-family: 'Raleway';
+      font-weight: bolder;
+    }
+
+    .bio {
+      font-size: 0.6875rem;
+      color: #5B5B5B;
+      margin-bottom: 1rem;
+    }
+
+    .counts {
+      font-family: 'Raleway';
+        font-weight: bold;
+
+
+      .count-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+
+        span {
+          color: #000000;
+        }
+
+        .counts-numbers {
+          font-weight: bolder;
+          color: #2ECC71;
+        }
+      }
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem;
+      margin-top: 1rem;
+
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0.5rem 0;
+      cursor: pointer;
+      font-weight: 500;
+      color: #333;
+
+      &:hover {
+        color: #2f855a;
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    border-radius: 20;
+
+    .create-post {
+      margin-bottom: 2rem;
+
+      input {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 16px;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;  
+      }
+
+      .actions button {
+        flex: 1;  
+        background-color: #ffffff;
+        font-size: 1.5rem;
+        border: none;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 550;
+
+        &:hover {
+          background-color: #a5a3a3ab;
+        }
+      }
+    }
+
+    .post {
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+
+      .post-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .profile-pic {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        h3 {
+          margin: 0;
+          span {
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: gray;
+          }
+        }
+
+        p {
+          margin: 0.2rem 0;
+          color: #666;
+          font-size: 0.9rem;
+        }
+      }
+
+      .post-body {
+        margin-top: 1rem;
+
+        p {
+          margin: 0.5rem 0;
+        }
+
+        .post-images {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1rem;
+
+          img {
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+      }
+
+      .post-footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        button {
+          flex: 1;  // Ensures buttons take up equal space
+          background-color: #edf2f7;
+          border: none;
+          padding: 0.6rem 1rem;
+          border-radius: 6px;
+          cursor: pointer;
+          font-weight: 500;
+
+          &:hover {
+            background: #276749;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .connections {
+    width: 220px;
+
+    h4 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+
+        button {
+          margin-top: 0.3rem;
+          padding: 0.4rem 0.8rem;
+          font-size: 0.8rem;
+          background: #edf2f7;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+
+          &:hover {
+            background: #e2e8f0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .community-hub {
+    flex-direction: column;
+
+    .sidebar,
+    .connections {
+      width: 100%;
+    }
+  }
+}
